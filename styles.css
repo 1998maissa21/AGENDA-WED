@@ -1,0 +1,58 @@
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --card-bg: #fff;
+  --primary: #4CAF50;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+#task-form-section, #task-list-section {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#task-form input, #task-form textarea, #task-form button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#task-list li {
+  background: var(--card-bg);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}

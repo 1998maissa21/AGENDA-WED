@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda Web Personal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Agenda Web Personal</h1>
+  </header>
+
+  <main>
+    <section id="task-form-section">
+      <h2>Agregar Tarea</h2>
+      <form id="task-form">
+        <input type="text" id="title" placeholder="Título de la tarea" required />
+        <textarea id="description" placeholder="Descripción (opcional)"></textarea>
+        <input type="date" id="date" required />
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
+
+    <section id="task-list-section">
+      <h2>Lista de Tareas</h2>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
